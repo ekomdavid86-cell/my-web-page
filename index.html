@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CSS3 Website</title>
+    <title>CSS3 | Modern Web Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
@@ -16,32 +21,33 @@
 
 <body>
 
-    <header>
-
-        <h2>
-            <i class="ri-css3-line"></i>
-        </h2>
-
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="service.html">Service</a>
-            <a href="contact.html">Contact</a>
-            <a href="block.html">Block</a>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg container" aria-label="Main navigation">
+            <a class="navbar-brand brand-mark" href="index.html" aria-label="CSS3 home">
+                <i class="ri-css3-line" aria-hidden="true"></i><span>studio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <div class="navbar-nav mx-lg-auto">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    <a href="service.html" class="nav-link">Service</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="block.html" class="nav-link">Block</a>
+                </div>
+                <a href="#contact" class="btn btn-brand nav-cta">Get Started <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            </div>
         </nav>
-
-        <div>
-            <a href="">Get Started</a>
-        </div>
-
     </header>
 
     <main>
 
         <section class="intro">
 
-            <div class="container">
+            <div class="container row align-items-center g-5">
 
-                <div class="text">
+                <div class="text col-lg-5">
 
                     <h3>
                         CSS <span>3</span>
@@ -52,17 +58,15 @@
                         <span>Design</span>
                     </h4>
 
-                    <i>
-                        Lorem ipsum dolor
-                    </i>
+                    <p class="hero-description">Thoughtful digital experiences, built to move your business forward.</p>
 
                     <div class="cta">
 
-                        <a href="">
-                            Get Started
+                        <a href="#contact" class="btn btn-brand">
+                            Get Started <i class="ri-arrow-right-line" aria-hidden="true"></i>
                         </a>
 
-                        <a href="" class="explore">
+                        <a href="#services" class="explore">
                             Explore &longleftrightarrow;
                         </a>
 
@@ -70,7 +74,7 @@
 
                 </div>
 
-                <div class="image">
+                <div class="image col-lg-7">
 
                     <img src="assets/image/+234 802 759 0830 20260405_122545~3.jpg" width="100%" alt="CSS design">
 
@@ -82,15 +86,15 @@
 
         <section class="our-story">
 
-            <div class="story-section">
+            <div class="story-section container row align-items-center g-5">
 
-                <div class="story-image">
+                <div class="story-image col-lg-6">
 
                     <img src="assets/image/img for computing.jpg" alt="Our Story">
 
                 </div>
 
-                <div class="story-content">
+                <div class="story-content col-lg-6">
 
                     <div class="small-title">
 
@@ -147,7 +151,7 @@
             </div>
 
         </section>
-        <section class="our-best-services">
+        <section class="our-best-services" id="services">
 
             <a href="" class="services">
                 Services
@@ -166,9 +170,9 @@
 
             </div>
 
-            <div class="services-container">
+            <div class="services-container container row g-4">
 
-                <div class="card-content">
+                <div class="card-content col-md-6 col-lg-4">
 
                     <i class="ri-capsule-line"></i>
 
@@ -183,7 +187,7 @@
 
                 </div>
 
-                <div class="card-content">
+                <div class="card-content col-md-6 col-lg-4">
 
                     <i class="ri-bootstrap-fill"></i>
 
@@ -198,7 +202,7 @@
 
                 </div>
 
-                <div class="card-content">
+                <div class="card-content col-md-6 col-lg-4">
 
                     <i class="ri-expand-left-right-line"></i>
 
@@ -213,7 +217,7 @@
 
                 </div>
 
-                <div class="card-content">
+                <div class="card-content col-md-6 col-lg-4">
 
                     <i class="ri-dashboard-3-line"></i>
 
@@ -228,7 +232,7 @@
 
                 </div>
 
-                <div class="card-content">
+                <div class="card-content col-md-6 col-lg-4">
 
                     <i class="ri-stack-line"></i>
 
@@ -243,7 +247,7 @@
 
                 </div>
 
-                <div class="card-content">
+                <div class="card-content col-md-6 col-lg-4">
 
                     <i class="ri-refresh-line"></i>
 
@@ -261,8 +265,8 @@
             </div>
 
         </section>
-        <section class="card-contents">
-            <section class="pricing">
+        <section class="card-contents container row g-4">
+            <section class="pricing col-12">
                 <div class="pricing-container">
                     <button class="pricing-button">pricing</button>
                     <h1>pricing & plans</h1>
@@ -270,7 +274,7 @@
                 </div>
 
             </section>
-            <div class="card">
+            <div class="card pricing-card col-md-6 col-xl-4">
                 <button class="shift">Starter</button>
                 <p>Lorem ipsum is simply dummy text of the printing and industry.</p>
                 <h3>
@@ -286,7 +290,7 @@
                     <li><i class="ri-checkbox-circle-line"></i>Excepteur sint occaecat velit</li>
                 </ul>
             </div>
-            <div class="card">
+            <div class="card pricing-card col-md-6 col-xl-4">
                 <button class="shift">Exclusive</button>
                 <p>Lorem ipsum is simply dummy text of the printing and industry.</p>
                 <h3>
@@ -302,7 +306,7 @@
                     <li><i class="ri-checkbox-circle-line"></i>Excepteur sint occaecat velit</li>
                 </ul>
             </div>
-            <div class="card">
+            <div class="card pricing-card col-md-6 col-xl-4">
                 <button class="shift">Premium</button>
                 <p>Lorem ipsum is simply dummy text of the printing and industry.</p>
                 <h3>
@@ -335,7 +339,7 @@
                     bag old lost the pilot say there spiffing off his nut.
                 </p>
 
-                <a href="#" class="talk-button">
+                <a href="#contact" class="talk-button">
                     Get Started
                 </a>
 
@@ -347,8 +351,8 @@
             <h1>Latest News & Blog</h1>
             <p>There are many various of passages of lorem ipsum available, but the majority have suffered alteration in
                 some form.</p>
-            <div class="blog-card">
-                <div class="news-card">
+            <div class="blog-card container row g-4">
+                <div class="news-card col-md-6 col-lg-4">
                     <div class="news-image-container">
                         <img src="assets/image/img for project1.jpg" width="100%" alt="">
                         <div class="author-badge">
@@ -361,7 +365,7 @@
                             been the industry's standard,</p>
                     </div>
                 </div>
-                <div class="news-card">
+                <div class="news-card col-md-6 col-lg-4">
                     <div class="news-image-container">
                         <img src="assets/image/img for project2.jpg" width="100%" alt="">
                         <div class="author-badge">
@@ -374,7 +378,7 @@
                             been the industry's standard,</p>
                     </div>
                 </div>
-                <div class="news-card">
+                <div class="news-card col-md-6 col-lg-4">
                     <div class="news-image-container">
                         <img src="assets/image/img for project3.jpg" width="100%" alt="">
                         <div class="author-badge">
@@ -398,10 +402,10 @@
                 in some form.
 
             </p>
-              <div class="container">
+              <div class="client-logos container row g-0">
 
         <!-- GrayGrids -->
-        <div class="logo-box">
+        <div class="logo-box col-6 col-md-4">
             <div class="graygrids">
                 <i class="ri-grid-fill"></i>
                 <span><strong>GRAY</strong>GRIDS</span>
@@ -409,7 +413,7 @@
         </div>
 
         <!-- UIdeck -->
-        <div class="logo-box">
+        <div class="logo-box col-6 col-md-4">
             <div class="uideck">
                 <i class="ri-layout-masonry-fill"></i>
                 <span>UIdeck</span>
@@ -417,7 +421,7 @@
         </div>
 
         <!-- Ayro UI -->
-        <div class="logo-box">
+        <div class="logo-box col-6 col-md-4">
             <div class="ayro">
                 <i class="ri-cloud-fill"></i>
                 <span><strong>Ayro</strong> UI</span>
@@ -425,7 +429,7 @@
         </div>
 
         <!-- Lineicons -->
-        <div class="logo-box">
+        <div class="logo-box col-6 col-md-4">
             <div class="lineicons">
                 <i class="ri-infinity-line"></i>
                 <span>Lineicons</span>
@@ -433,7 +437,7 @@
         </div>
 
         <!-- Tailwind Templates -->
-        <div class="logo-box">
+        <div class="logo-box col-6 col-md-4">
             <div class="tailwind">
                 <i class="ri-window-line"></i>
                 <span>Tailwind<br>Templates</span>
@@ -441,7 +445,7 @@
         </div>
 
         <!-- Ecommerce -->
-        <div class="logo-box">
+        <div class="logo-box col-6 col-md-4">
             <div class="ecommerce">
                 <i class="ri-shopping-cart-2-fill"></i>
                 <div>
@@ -454,12 +458,12 @@
     </div>
 
         </section>
-         <section class="contact-section">
+         <section class="contact-section" id="contact">
 
-        <div class="contact-container">
+        <div class="contact-container container row g-4">
 
             <!-- Left Side: Contact Information -->
-            <div class="contact-info">
+            <div class="contact-info col-lg-5">
 
                 <div class="info-box">
                     <div class="icon">
@@ -502,7 +506,7 @@
 
 
             <!-- Right Side: Contact Form -->
-            <div class="contact-form">
+            <div class="contact-form col-lg-7">
 
                 <div class="form-heading">
                     <h4>Get in Touch</h4>
@@ -515,20 +519,20 @@
 
                 <form action="#" method="post">
 
-                    <div class="input-group">
-                        <input type="text" placeholder="Name" required>
+                    <div class="form-row row g-3">
+                        <input class="form-control col" type="text" placeholder="Name" required>
 
-                        <input type="email" placeholder="Email" required>
+                        <input class="form-control col" type="email" placeholder="Email" required>
                     </div>
 
-                    <div class="input-group">
-                        <input type="tel" placeholder="Phone">
+                    <div class="form-row row g-3">
+                        <input class="form-control col" type="tel" placeholder="Phone">
 
-                        <input type="text" placeholder="Subject">
+                        <input class="form-control col" type="text" placeholder="Subject">
                     </div>
 
                     <div class="message-box">
-                        <textarea placeholder="Type Message" required></textarea>
+                        <textarea class="form-control" placeholder="Type Message" required></textarea>
                     </div>
 
                     <div class="button-container">
@@ -544,7 +548,7 @@
     </section>
     <section class="map-section">
 
-    <div class="map-container">
+    <div class="map-container container">
 
         <div class="map-heading">
             <h4>Our Location</h4>
@@ -554,13 +558,8 @@
 
         <div class="map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.721246338672!2d7.405998574050019!3d9.089138588046682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e753abb6a165f%3A0xbfb80b47c8037866!2sBizmarrow%20skills%20and%20career%20development%20center%20Abuja%20Nigeria%20(BSCDC)!5e0!3m2!1sen!2sng!4v1791146657484!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-                width="100%"
-                height="450"
-                style="border:0;"
-                allowfullscreen="100%"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.721246338672!2d7.405998574050019!3d9.089138588046682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e753abb6a165f%3A0xbfb80b47c8037866!2sBizmarrow%20skills%20and%20career%20development%20center%20Abuja%20Nigeria%20(BSCDC)!5e0!3m2!1sen!2sng!4v1791146657484!5m2!1sen!2sng"
+                title="Map showing our Abuja office" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
             </iframe>
         </div>
 
@@ -569,7 +568,8 @@
 </section>
 <section>
     <footer>
-  <div>
+    <div class="footer-inner container row g-4">
+    <div class="col-md-6 col-lg-4">
     <h2>Business</h2>
     <p>Making the world a better place<br>through constructing elegant hierarchies.</p>
     <p>© 2024 Ayro UI.<br>
@@ -577,7 +577,7 @@
     Distributed by <a class="blue" href="#">ThemeWagon</a></p>
   </div>
  
-  <div>
+    <div class="col-6 col-lg-2">
     <h3>Solutions</h3>
     <a href="#">Marketing</a>
     <a href="#">Analytics</a>
@@ -585,7 +585,7 @@
     <a href="#">Insights</a>
   </div>
  
-  <div>
+    <div class="col-6 col-lg-2">
     <h3>Support</h3>
     <a href="#">Pricing</a>
     <a href="#">Documentation</a>
@@ -593,7 +593,7 @@
     <a href="#">API Status</a>
   </div>
  
- <div>
+ <div class="col-md-6 col-lg-4">
   <h3>Subscribe</h3>
   <p>Subscribe to our newsletter<br>for the latest updates</p>
   <form id="subscribeForm">
@@ -632,6 +632,7 @@
     if (e.target === popup) popup.classList.remove("show");
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
