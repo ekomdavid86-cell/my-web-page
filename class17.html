@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- object -->
+     <button onclick="redirect()">open</button>
+     <button onclick="window.open('class2.html','blank')">new page</button>
+     <script>
+        //window
+        document.write(`<br> location:${location}`)
+        document.write(`<br> location:${location.href}`)
+        document.write(`<br> location:${location.pathname}`)
+        document.write(`<br> screen:${screen}`)
+        document.write(`<br> screen width:${screen.width}`)
+        document.write(`<br> screen height:${screen.height}`)
+        document.write(`<br> screen width:${innerWidth}`)
+        document.write(`<br> window height:${innerHeight}`)
+
+        function redirect(){
+            location.href='clas.html'
+        }
+        alert('hello world')//info
+        Response=confirm('will you be in class')//ask a question
+        input=prompt('how old are you?')//custom input
+
+        document.write(`<br> comnfirm response:${Response}`)
+        document.write(`<br> prompt : ${input}`)
+
+        //storage
+        localStorage.setItem('item1','solomon')
+        localStorage.setItem('item1','05.10.2026')
+        user=localStorage.getItem('item2')
+        document.write(`<br> localStorage:${user}`)
+        
+        localStorage.setItem(`'item1',''`)
+        localStorage.remopveItem('item1')
+
+
+        //interval -repeat with duration,
+        //timeout - once with a duration
+        //clear - sstop an inyterval or timeout
+
+        
+     </script>
+</body>
+</html>
